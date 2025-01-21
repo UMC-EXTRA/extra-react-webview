@@ -11,7 +11,7 @@ import {
   SeasonEnum,
   type CategoryEnum,
   type RoleRegister,
-} from "@api/interface";
+} from "@/types/shared";
 import { requestPostFetch } from "@api/utils";
 import { useNavigate } from "react-router-dom";
 import { IoCaretBackOutline } from "react-icons/io5";

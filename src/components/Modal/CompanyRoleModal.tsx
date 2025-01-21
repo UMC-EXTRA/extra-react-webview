@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
-import { RoleRegister, SeasonEnum } from "@api/interface";
+import { RoleRegister, SeasonEnum } from "@/types/shared";
 import Modal from "@components/atoms/Modal";
 import { MainButton, BoxButton } from "@components/atoms/Button";
 import Text from "@components/atoms/Text";

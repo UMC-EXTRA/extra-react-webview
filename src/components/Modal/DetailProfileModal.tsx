@@ -4,7 +4,7 @@ import Text from "@components/atoms/Text";
 import { HiMiniXMark } from "react-icons/hi2";
 import { MainButton } from "@components/atoms/Button";
 import { useNavigate } from "react-router-dom";
-import { dummyUserRoleData } from "@api/dummyData";
+import { dummyUserRoleData } from "@/mocks/dummyData";
 
 interface DetailProfileProps {
   isVisible: boolean;
