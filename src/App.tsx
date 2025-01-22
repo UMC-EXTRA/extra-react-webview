@@ -42,8 +42,9 @@ import CompanyProfilePage from "@pages/CompanyProfilePage";
 import CompanySettingPage from "@pages/CompanySettingPage";
 import PostOverviewPage from "@pages/PostOverviewPage";
 import RecruitmentStatus from "@pages/RecruitmentStatus";
-import handleAllowNotification from "@utills/pushNotification/notificationPermission";
 import { useEffect } from "react";
+import handleAllowNotification from "@utills/pushNotification/notificationPermission";
+import Chat from "@pages/Chat/Chat";
 
 function App() {
   useEffect(() => {
@@ -163,6 +164,8 @@ function App() {
 
           {/* for testing theme */}
           <Route path="/theme-preview" element={<ThemePreviewPage />} />
+
+          <Route path="/chatRoom" element={<Chat />} />
         </Routes>
       </BrowserRouter>
     </>
