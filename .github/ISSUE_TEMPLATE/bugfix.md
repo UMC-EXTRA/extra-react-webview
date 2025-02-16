@@ -1,9 +1,10 @@
 ---
 name: bug(fix)
 about: Create a report to help us improve
-title: '[페이지명] 내용'
-labels: '⚠️ Bug'
+title: "[페이지명] 내용"
+labels: "⚠️ Bug"
 assignees: ''
+
 ---
 
 ## 🐞 어떤 문제가 발생했나요?
