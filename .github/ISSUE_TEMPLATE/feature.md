@@ -1,9 +1,10 @@
 ---
 name: feature
 about: Suggest an idea for this project
-title: '[페이지명] 내용'
+title: "[페이지명] 내용"
 labels: ''
 assignees: ''
+
 ---
 
 ## 💡 어떤 기능인가요?

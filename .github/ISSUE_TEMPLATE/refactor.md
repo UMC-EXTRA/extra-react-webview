@@ -1,9 +1,10 @@
 ---
 name: refactor
 about: Improve code structure without changing its functionality
-title: '[페이지명] 내용'
+title: "[페이지명] 내용"
 labels: ''
 assignees: ''
+
 ---
 
 ## 🛠️ 리팩터링이 필요한 이유는 무엇인가요?
