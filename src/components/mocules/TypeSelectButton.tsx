@@ -1,4 +1,4 @@
-import { BACKGROUND_COLORS, COMMON_COLORS, FONT_COLORS } from "@/styled/colors";
+import { BACKGROUND_COLORS, COMMON_COLORS, FONT_COLORS } from "@styled/colors";
 import Margin from "@components/atoms/Margin";
 import Text from "@components/atoms/Text";
 import styled from "styled-components";

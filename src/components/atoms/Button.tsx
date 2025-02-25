@@ -6,7 +6,7 @@ import star_y from "@assets/Star_y.png";
 import BackIconImg from "@assets/backIcon.png";
 import { useNavigate } from "react-router-dom";
 import { TfiAngleLeft } from "react-icons/tfi";
-import { BACKGROUND_COLORS, COMMON_COLORS } from "@/styled/colors";
+import { BACKGROUND_COLORS, COMMON_COLORS } from "@styled/colors";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
@@ -127,7 +127,6 @@ const BoxButton = ({ children, onClick, isActive = false }: ButtonProps) => {
   );
 };
 
-
 const BackButton = () => {
   const navigate = useNavigate();
   return (
@@ -152,4 +151,10 @@ const HistoryBackButton = ({ onClick }: HistoryBackButtonProps) => {
   );
 };
 
-export { StarToggleButton, MainButton, HistoryBackButton, BackButton, BoxButton };
+export {
+  StarToggleButton,
+  MainButton,
+  HistoryBackButton,
+  BackButton,
+  BoxButton,
+};
