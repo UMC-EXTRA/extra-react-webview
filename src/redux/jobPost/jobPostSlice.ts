@@ -28,6 +28,7 @@ export const defaultJobPost: JobPost = {
   category: "",
   companyName: "",
   scheduleIdList: [],
+  applyDeadLine: "",
   calenderList: [],
   roleIdList: [],
   roleNameList: [],
@@ -139,6 +140,18 @@ export const fetchJobPostByList = createAsyncThunk(
 export const fetchJobPostById = createAsyncThunk<JobPost, number>(
   "jobPosts/fetchById",
   async (id: number) => {
+    if (TEST_FLAG) {
+      console.log("fetchJobPostById 실행");
+      const data = new Promise<JobPost>((resolve) =>
+        setTimeout(() => {
+          resolve(
+            dummyJobPostList.find((jobPost) => jobPost.id === id) ||
+              defaultJobPost,
+          );
+        }, 2000),
+      );
+      return data;
+    }
     const data = await jobPostAPI.getJobPostById(id);
     return data;
   },
@@ -200,6 +213,8 @@ const jobPostSlice = createSlice({
       })
       .addCase(fetchJobPostById.fulfilled, (state, action) => {
         state.jobPostItem.status = ResponseStatus.fullfilled;
+
+        console.log(action);
 
         state.jobPostItem.data = action.payload;
       })
